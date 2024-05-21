@@ -69,3 +69,12 @@ footer {
     background: #333;
     color: #fff;
 }
+a {
+    
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underlines the link on hover */
+    color: #0c47a1; /* Darker blue on hover */
+}
