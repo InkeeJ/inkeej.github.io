@@ -17,8 +17,8 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Selected projects</a></li>
             <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#Selected projects">Selected projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav> 
@@ -27,11 +27,10 @@
         <div class = "about-content">
             <div class="about-text">
                 <h2>About Me</h2>
-                <p>Welcome! a PhD candidate at Boston University working in geometry and topology, with growing expertise in machine learning and AI applications.</p>
+                <p>Welcome! a PhD candidate at Boston University working in geometry and topology, with expertise in machine learning and applied research.</p>
                 <p>I'm a member of the Geometry and Physics research group in BU.</p>
                 <p>My research advisor is Professor <a href="https://math.bu.edu/people/lau/Lau/My_geometry_life.html" target="_blank">Siu-Cheong Lau</a></p>
                 <p>My undergraduate studies were in mathematics department at the Yonsei University in South Korea.</p>
-                <p>You can download my resume <a href="/docs/resume_Inkee_Jung.docx" target="_blank">here</a>.</p>
             </div>
             <img src="Profile_Photo2024.jpeg" alt="Inkee" id="profile-photo">
         </div>
@@ -40,10 +39,12 @@
     <section id="research">
         <h2>Research</h2>
         <p>
-            I enjoy bridging abstract mathematical ideas—like geometry and topology—with practical AI applications, especially in model interpretability and explainability.
+            I bridge geometry and topology with practical AI applications. I impose geometric and topological structure on datasets(Logifold) to make machine learning systems more interpretable and accessible through the lens of geometry and topology. My work includes developing a geometric framework for untrustworthy samples, including adversarial attacks, and a featurization method for Topological Data Analysis.
         </p>
         <h3>Publication & Preprints</h3>
         <ul>
+            <li> Inkee Jung and Siu-Cheong Lau. (2026). Laws of Learning Dynamics and the Core of Learners, <a href="https://arxiv.org/abs/2602.05026" target="_blank">arxiv</a></li>
+            <a href=" https://github.com/geom-data/Learning_Dynamics_and_Core_of_Learners/" target = "_blank"> Github</a>
             <li>Inkee Jung, Wonwoo Kang, and Heehyun Park. (2025). Persistent Laplacian Diagrams, <a href="https://arxiv.org/abs/2512.05463" target="_blank">arxiv</a></li>
             <li>Jung, I., & Lau, S.-C. (2025). A Logifold Structure for Measure Space. Axioms, 14(8), 599. 
                 <a href="https://doi.org/10.3390/axioms14080599" target="_blank">https://doi.org/10.3390/axioms14080599</a></li>
@@ -79,7 +80,7 @@
         </li>
 
         <li>
-            <strong>Summer 2023</strong>: Boston University, CAS MA 581 – Probability  
+            <strong>Summer 2023</strong>: Boston University, CAS MA 581 - Probability  
             <br>
             Instructor for a summer course covering probability theory, Bayes' rule, random variables, distributions, moment-generating functions, the law of large numbers, and the central limit theorem.  
             <br>
@@ -98,9 +99,22 @@
     </ul>
 </section>
 
-    <section id="Selected projects">
+    <section id="selected-projects">
     <h2>Selected Projects</h2>
     <ul>
+        <li>
+            <strong>Laws of Learning Dynamics and the Core of Learners</strong> - <em>Spring 2025 - Spring 2026</em>
+                <br>
+                Project on a structure of learning using logifold geometry and ensemble entropy
+to formalize a “core vs out-of-core” decomposition of data, then leveraging it for both
+when/why predictions are trustworthy and robustness under adversarial perturbations.
+                <br>We use ensemble entropy (disagreement) to split inputs into
+    reliable core vs suspicious out-of-core, then route OoC to specialists (IMM: Immunization Mechanism), and evaluate adversarial robustness. We generated transfer-based AutoAttack (L2) samples (PyTorch/RobustBench)
+    and APGD samples (TF2/ART). We released config-driven notebooks covering attack generation, TF2 training
+    (ResNet/VGG), sample generation, and the main evaluation pipeline in the following <a href="https://github.com/geom-data/Learning_Dynamics_and_Core_of_Learners" target="_blank">GitHub</a>
+                
+
+        </li>
         <li>
             <strong>Predicting Aviation Accident Severity</strong> - The Erdős Institute  - <em>Summer 2025</em> 
             <br>
@@ -115,15 +129,7 @@
             Built ensemble models (XGBoost, Random Forest, Extra Trees, Histogram Gradient Boosting) with grid search and cross-validation.  
             Achieved an F1 score of 0.459 (Extra Trees) in aircraft damage classification, significantly above the 0.316 baseline.
         </li>
-        <li>
-            <strong>Predicting untrustworthy predictions and the Law of Learning Dynamics</strong> - <em>Spring 2025 - Present</em>
-                <br>
-                On-going project developing a geometric framework for untrustworthy samples including adversarial attacks using Logifold structures.
-                <br>
-                Using Logifold structures to detect perturbations, enhance robustness, and improve ensemble performance. 
-                
-
-        </li>
+        
         <li>
             <strong>Persistent Laplacian Diagrams</strong> - <em>Spring 2025 - Present</em>  
             <br>
@@ -131,7 +137,7 @@
             <br>
             Constructed an explicit pair of non-isomorphic graphs that are indistinguishable by persistent homology or classical graph Laplacian spectra, but distinguishable by our Persistent Laplacian based signatures, demonstrating their additional discriminative power.
             <br>
-            Currently extending this framework to biomolecular, point cloud, and graph datasets through a series of benchmark experiments.
+            Currently extending this framework to (bio)molecular dataset (e.g., QM7) for comprehensive evaluation of the method's practical utility in real-world applications.
         </li>
     </ul>
 </section>
