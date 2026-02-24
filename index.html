@@ -20,6 +20,7 @@
             <li><a href="#projects">Selected projects</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="docs/Inkee_Jung_Resume.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav> 
     
@@ -112,7 +113,8 @@ when/why predictions are trustworthy and robustness under adversarial perturbati
     reliable core vs suspicious out-of-core, then route OoC to specialists (IMM: Immunization Mechanism), and evaluate adversarial robustness. We generated transfer-based AutoAttack (L2) samples (PyTorch/RobustBench)
     and APGD samples (TF2/ART). We released notebooks covering attack generation, TF2 training
     (ResNet/VGG), sample generation, and the main evaluation pipeline in the following <a href="https://github.com/geom-data/Learning_Dynamics_and_Core_of_Learners" target="_blank">GitHub</a>
-                
+                <br> We achieved improvements under strong adversarial attacks on CIFAR-10(APGD) from 21.48% (baseline) to 90.93% (IMM); on polluted environments (union of clean and perturbed samples), from 64.35% (U1 ensemble) to 87.48%(IMM).
+                In non-clean setting, total entropy drops sharply from U1 to IMM, indicating much higher reliability of IMM predictions.
 
         </li>
         <li>
@@ -127,7 +129,7 @@ when/why predictions are trustworthy and robustness under adversarial perturbati
             Led data extraction and cleaning by converting .mdb files to .csv and integrating event, aircraft, and sub-aircraft tables into a unified dataset.  
             Engineered and imputed features for classification and regression tasks.  
             Built ensemble models (XGBoost, Random Forest, Extra Trees, Histogram Gradient Boosting) with grid search and cross-validation.  
-            Achieved an F1 score of 0.459 (Extra Trees) in aircraft damage classification, significantly above the 0.316 baseline.
+            Achieved an F1 score of 0.459 (Extra Trees) in aircraft damage classification, significantly above the 0.316 baseline (majority class).
         </li>
         
         <li>
